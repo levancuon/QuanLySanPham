@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/product/delete" method="post" th:object="${product}">
+    <input type="hidden" th:field="*{id}">
+    <input type="text" th:field="*{name}">
+    <input type="text" th:field="*{price}">
+    <a href="/product">hủy</a>
+    <button>Xác nhận xóa</button>
+</form>
+</body>
+</html>
